@@ -47,7 +47,7 @@ export default function SqaureScreen() {
         <Pressable
             onPress={reset}
             style={styles.button}>
-            <Text style={styles.buttonText}>RESET</Text>
+            <Text style={styles.buttonText}>VISSZAÁLLÍT</Text>
         </Pressable>
       </View>
 
