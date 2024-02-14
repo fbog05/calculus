@@ -9,7 +9,7 @@ export default function App() {
   const Tab = createMaterialTopTabNavigator();
 
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={{colors: { primary: "white" }}}>
       <Tab.Navigator screenOptions={{
         tabBarLabelStyle: { color: 'white' },
         tabBarStyle: { backgroundColor: '#800040' },
