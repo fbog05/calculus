@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     color: '#800040',
     fontWeight: 800,
     fontSize: 25,
-    marginTop: 20,
+    marginTop: 10,
   },
 
   body: {

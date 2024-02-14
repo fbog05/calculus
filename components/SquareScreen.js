@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
-export default function SquareScreen() {
+export default function SqaureScreen() {
 
   const [side, setSide] = useState('')
   const [area, setArea] = useState('')
@@ -12,12 +12,13 @@ export default function SquareScreen() {
   }
 
   function reset(){
-    setArea('')
     setSide('')
+    setArea('')
   }
 
   return (
     <View style={styles.container}>
+
       <Text style={styles.cim}>Négyzet</Text>
 
       <View style={styles.body}>
@@ -25,7 +26,7 @@ export default function SquareScreen() {
         <TextInput
           style={styles.mezo}
           onChangeText={text => setSide(text)}
-          value={side}
+          value = {side}
         />
 
         <Pressable
@@ -36,19 +37,19 @@ export default function SquareScreen() {
             SZÁMÍT
           </Text>
         </Pressable>
-
+        
         <Text style={styles.szoveg}>Terület</Text>
         <TextInput
           style={styles.mezo}
           value = {area}
         />
-      </View>
 
         <Pressable
             onPress={reset}
             style={styles.button}>
             <Text style={styles.buttonText}>RESET</Text>
         </Pressable>
+      </View>
 
       <View style={styles.footer}>
         <Text style={styles.footerText}>Ferencsik Boglárka, 2024</Text>
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     color: '#800040',
     fontWeight: 800,
     fontSize: 25,
-    marginTop: 20,
+    marginTop: 10,
   },
 
   body: {
