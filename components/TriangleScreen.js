@@ -10,8 +10,12 @@ export default function TriangleScreen() {
   function calcArea(){
     let res = base * height /2
     setArea(res)
+  }
+
+  function reset(){
     setBase('')
     setHeight('')
+    setArea('')
   }
 
   return (
@@ -24,11 +28,13 @@ export default function TriangleScreen() {
         <TextInput
           style={styles.mezo}
           onChangeText={text => setBase(text)}
+          value = {base}
         />
         <Text style={styles.szoveg}>Magasság</Text>
         <TextInput
           style={styles.mezo}
           onChangeText={text => setHeight(text)}
+          value = {height}
         />
         <Pressable
           onPress={calcArea}
@@ -43,6 +49,12 @@ export default function TriangleScreen() {
           style={styles.mezo}
           value = {area}
         />
+
+        <Pressable
+            onPress={reset}
+            style={styles.button}>
+            <Text style={styles.buttonText}>RESET</Text>
+        </Pressable>
       </View>
 
       <View style={styles.footer}>

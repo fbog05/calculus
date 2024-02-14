@@ -9,7 +9,11 @@ export default function CircleScreen() {
   function calcArea(){
     let res = (radius**2)*Math.PI
     setArea(res)
+  }
+
+  function reset(){
     setRadius('')
+    setArea('')
   }
 
   return (
@@ -22,6 +26,7 @@ export default function CircleScreen() {
         <TextInput
           style={styles.mezo}
           onChangeText={text => setRadius(text)}
+          value={radius}
         />
 
         <Pressable
@@ -39,6 +44,12 @@ export default function CircleScreen() {
           value = {area}
         />
       </View>
+      
+      <Pressable
+            onPress={reset}
+            style={styles.button}>
+            <Text style={styles.buttonText}>RESET</Text>
+        </Pressable>
 
       <View style={styles.footer}>
         <Text style={styles.footerText}>Ferencsik Boglárka, 2024</Text>

@@ -9,6 +9,10 @@ export default function SquareScreen() {
   function calcArea(){
     let res = (side**2)
     setArea(res)
+  }
+
+  function reset(){
+    setArea('')
     setSide('')
   }
 
@@ -21,6 +25,7 @@ export default function SquareScreen() {
         <TextInput
           style={styles.mezo}
           onChangeText={text => setSide(text)}
+          value={side}
         />
 
         <Pressable
@@ -38,6 +43,12 @@ export default function SquareScreen() {
           value = {area}
         />
       </View>
+
+        <Pressable
+            onPress={reset}
+            style={styles.button}>
+            <Text style={styles.buttonText}>RESET</Text>
+        </Pressable>
 
       <View style={styles.footer}>
         <Text style={styles.footerText}>Ferencsik Boglárka, 2024</Text>
