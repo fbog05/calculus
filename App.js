@@ -12,7 +12,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator screenOptions={{
         tabBarLabelStyle: { color: 'white' },
-        tabBarStyle: { backgroundColor: 'navy' }
+        tabBarStyle: { backgroundColor: '#800040' }
       }}>
         <Tab.Screen name="Háromszög" component={TriangleScreen} />
         <Tab.Screen name="Kör" component={CircleScreen} />

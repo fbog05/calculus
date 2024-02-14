@@ -50,13 +50,13 @@ export default function SquareScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightblue',
+    backgroundColor: 'lightpink',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
   cim: {
-    color: 'navy',
+    color: '#800040',
     fontWeight: 800,
     fontSize: 25,
     marginTop: 20,
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
 
   szoveg:{
-    color: 'navy',
+    color: '#800040',
     fontWeight: 700,
     paddingBottom: 10,
     fontSize: 18,
@@ -79,10 +79,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 10,
     padding: 8,
-    color: 'navy',
+    color: '#800040',
     fontWeight: 600,
     marginBottom: 20,
-    borderColor: 'navy',
+    borderColor: '#800040',
     borderWidth: 1,
     shadowColor: '#171717',
     shadowOffset: {width: 5, height: 5},
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    backgroundColor: 'navy',
+    backgroundColor: '#800040',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 10,
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
   },
 
   footer: {
-    backgroundColor: 'navy',
+    backgroundColor: '#800040',
     width: '100%',
     opacity: '80%',
     padding: 5
